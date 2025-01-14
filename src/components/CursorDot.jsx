@@ -16,9 +16,9 @@ const CursorDot = () => {
 
   return (
     <div
-      className="pointer-events-none fixed top-0 left-0 w-16 h-16 bg-cyan-500 rounded-full blur-3xl opacity-90"
+      className="pointer-events-none fixed top-0 left-0 w-96 h-96 bg-blue-600 rounded-full blur-[128px] opacity-10"
       style={{
-        transform: `translate(${position.x - 32}px, ${position.y - 32}px)`,
+        transform: `translate(${position.x - 192}px, ${position.y - 192}px)`,
       }}
     />
   );

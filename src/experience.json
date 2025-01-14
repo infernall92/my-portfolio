@@ -1,0 +1,10 @@
+[{
+    "time": {
+        "from": "May 2024",
+        "to": "PRESENT"
+    },
+    "role": "Junior Front-End Developer",
+    "workplace": "Crypto wallet Web3 startup project",
+    "description": "I built and styled the app's client side, ensuring responsiveness, browser compatibility, and smooth animations, while also building the landing page for the app.",
+    "technologies": ["Next.js","TypeScript", "Tailwind CSS", "StoryBook", "Redux", "NextUI", "Framer Motion", "GIT", "Jira"]
+}]

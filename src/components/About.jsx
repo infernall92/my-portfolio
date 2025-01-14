@@ -1,21 +1,34 @@
 export const About = () => {
   return (
-    <section className="text-slate-500 flex flex-col gap-3">
+    <section id="about" className="text-slate-500 flex flex-col gap-3">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non odio
-        est. Pellentesque non felis vitae lectus faucibus facilisis. Praesent
-        auctor sollicitudin elit, ac egestas nisi consectetur non.
+        I am a front-end developer passionate about building intuitive and
+        visually appealing user interfaces. My goal is to grow by working on
+        challenging projects, staying updated with the latest technologies, and
+        creating impactful solutions.
       </p>
       <p>
-        Aliquam maximus vitae nunc non ullamcorper. Etiam condimentum rhoncus
-        diam, scelerisque volutpat eros pretium ac. Morbi egestas lectus et
-        vestibulum placerat. Suspendisse potenti. Phasellus ac mi dui. Integer
-        tincidunt turpis sed quam vestibulum mattis.
+        I’ve built my skills through various courses and academies, including
+        Udemy, where I gained a strong foundation in{" "}
+        <span className="text-slate-300">HTML</span>,{" "}
+        <span className="text-slate-300">CSS</span>,{" "}
+        <span className="text-slate-300">JavaScript</span>, and{" "}
+        <span className="text-slate-300">frameworks</span> like{" "}
+        <span className="text-slate-300">React</span> and{" "}
+        <span className="text-slate-300">Next.js</span>. These experiences have
+        equipped me with the knowledge to develop{" "}
+        <span className="text-slate-300">modern</span> and{" "}
+        <span className="text-slate-300">responsive</span> web applications.
       </p>
       <p>
-        Sed vestibulum nisi ac nulla porttitor facilisis. Cras nisl neque,
-        rutrum a leo et, consectetur sodales risus. Quisque dapibus elementum
-        purus scelerisque porta.
+        Currently, I am part of a team as a{" "}
+        <span className="text-slate-300">Junior Front-End Developer</span>,
+        working on a{" "}
+        <span className="text-slate-300">Web3 startup project</span>. This role
+        has helped me understand the development flow, gain experience with{" "}
+        <span className="text-slate-300">GIT</span> and{" "}
+        <span className="text-slate-300">Jira</span>, and observe how a team
+        approaches the development of an application.
       </p>
     </section>
   );

@@ -1,11 +1,11 @@
 export const Header = () => {
   return (
-    <header className="flex flex-col justify-between h-screen py-10 pl-36">
+    <header className="flex flex-col justify-between h-screen py-10 pl-36 mr-48">
       <div className="flex flex-col gap-4">
         <h1 className="text-slate-300 text-6xl font-extrabold">
           HRISTO HRISTOV
         </h1>
-        <h2 className="text-slate-500 text-3xl font-thin">
+        <h2 className="text-slate-300 text-3xl font-thin">
           Front End Developer
         </h2>
         <p className="text-slate-500 text-base">
