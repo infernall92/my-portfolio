@@ -8,7 +8,7 @@ export const ExperienceCard = ({
 }) => {
   return (
     <div className="text-slate-500 flex gap-5 group hover:bg-slate-800 hover:border-slate-700 rounded-md p-2">
-      <div className="w-full text-xs font-medium pt-2">
+      <div className="whitespace-nowrap text-xs font-medium pt-2">
         <p>
           {from} - {to}
         </p>
