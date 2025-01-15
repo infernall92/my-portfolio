@@ -1,4 +1,4 @@
-export const About = () => {
+const About = () => {
   return (
     <section id="about" className="text-slate-500 flex flex-col gap-3">
       <p>
@@ -28,8 +28,10 @@ export const About = () => {
         has helped me understand the development flow, gain experience with{" "}
         <span className="text-slate-300">GIT</span> and{" "}
         <span className="text-slate-300">Jira</span>, and observe how a team
-        approaches the development of an application.
+        approaches the creation of a web application from the ground up.
       </p>
     </section>
   );
 };
+
+export default About;

@@ -1,4 +1,4 @@
-export const Skills = () => {
+const Skills = () => {
   const softSkills = [
     "Problem solver",
     "Team Player",
@@ -59,3 +59,5 @@ export const Skills = () => {
     </div>
   );
 };
+
+export default Skills;

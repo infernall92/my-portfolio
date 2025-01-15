@@ -1,11 +1,4 @@
-export const ExperienceCard = ({
-  from,
-  to,
-  role,
-  workplace,
-  description,
-  technologies,
-}) => {
+const Card = ({ from, to, role, workplace, description, technologies }) => {
   return (
     <div className="text-slate-500 flex gap-5 group hover:bg-slate-800 hover:border-slate-700 rounded-md p-2">
       <div className="whitespace-nowrap text-xs font-medium pt-2">
@@ -33,3 +26,5 @@ export const ExperienceCard = ({
     </div>
   );
 };
+
+export default Card;

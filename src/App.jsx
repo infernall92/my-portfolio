@@ -1,8 +1,8 @@
-import { About } from "./components/About";
+import About from "./components/About";
 import CursorDot from "./components/CursorDot";
-import { Experience } from "./components/Experience";
-import { Header } from "./components/Header";
-import { Skills } from "./components/Skills";
+import Experience from "./components/Experience";
+import Header from "./components/Header";
+import Skills from "./components/Skills";
 
 function App() {
   return (

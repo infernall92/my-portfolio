@@ -1,0 +1,10 @@
+[{
+    "time": {
+        "from": "November 2023",
+        "to": "May - 2024"
+    },
+    "course": "React - The Complete Guide (incl. React Router & Redux)",
+    "academy": "Udemy",
+    "description": "I got pretty familiar with React and Next.js from what I learned through this course.",
+    "technologies": ["React", "Tailwind CSS", "Redux", "React Router", "Next.js","TypeScript", "Framer Motion"]
+}]

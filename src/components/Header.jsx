@@ -1,4 +1,4 @@
-export const Header = () => {
+const Header = () => {
   return (
     <header className="flex flex-col justify-between h-screen py-10 pl-36 mr-48">
       <div className="flex flex-col gap-4">
@@ -40,3 +40,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;

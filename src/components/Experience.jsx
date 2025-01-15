@@ -1,11 +1,10 @@
-import { ExperienceCard } from "./ExperienceCard";
+import Card from "./Card";
 import EXPERIENCE from "../experience.json";
-
-export const Experience = () => {
+const Experience = () => {
   return (
     <section id="experience" className="mt-16">
       {EXPERIENCE.map((exp, index) => (
-        <ExperienceCard
+        <Card
           key={index}
           from={exp.time.from}
           to={exp.time.to}
@@ -18,3 +17,5 @@ export const Experience = () => {
     </section>
   );
 };
+
+export default Experience;
