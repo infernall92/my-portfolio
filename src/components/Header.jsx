@@ -1,3 +1,4 @@
+import IconWithGlow from "./custom/IconWithGlow";
 import { IconGithub } from "./Icons/GitHub";
 import { IconGmail } from "./Icons/Gmail";
 import { IconLinkedin } from "./Icons/LinkedIn";
@@ -44,7 +45,13 @@ const Header = () => {
             rel="noopener noreferrer"
             className="cursor-[inherit]"
           >
-            <IconGithub className="w-6 h-6" />
+            <IconWithGlow
+              Icon={
+                <IconGithub className="w-6 h-6 group-hover:text-[#000000]" />
+              }
+              glowColor="#ffffff"
+            />
+            {/* <IconGithub className="w-6 h-6" /> */}
           </a>
         </li>
         <li className="flex justify-center items-center">
@@ -54,7 +61,13 @@ const Header = () => {
             rel="noopener noreferrer"
             className="cursor-[inherit]"
           >
-            <IconLinkedin className="w-6 h-6" />
+            <IconWithGlow
+              Icon={
+                <IconLinkedin className="w-6 h-6 group-hover:text-[#0A66C2]" />
+              }
+              glowColor="#ffffff"
+            />
+            {/* <IconLinkedin className="w-6 h-6" /> */}
           </a>
         </li>
         <li className="flex justify-center items-center">
@@ -62,7 +75,13 @@ const Header = () => {
             href="mailto:hhristo.hristovv@gmail.com"
             className="cursor-[inherit]"
           >
-            <IconGmail className="w-8 h-8" />
+            <IconWithGlow
+              Icon={
+                <IconGmail className="w-8 h-8 group-hover:text-[#c71610]" />
+              }
+              glowColor="#f2a60c"
+            />
+            {/* <IconGmail className="w-8 h-8" /> */}
           </a>
         </li>
       </ul>
