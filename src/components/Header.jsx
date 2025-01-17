@@ -37,14 +37,33 @@ const Header = () => {
         </ul>
       </nav>
       <ul className="flex gap-10 text-slate-500 text-base font-semibold">
-        <li>
-          <IconGithub className="w-8 h-8" />
+        <li className="flex justify-center items-center">
+          <a
+            href="https://github.com/infernall92"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-[inherit]"
+          >
+            <IconGithub className="w-6 h-6" />
+          </a>
         </li>
-        <li>
-          <IconLinkedin className="w-8 h-8" />
+        <li className="flex justify-center items-center">
+          <a
+            href="https://www.linkedin.com/in/hristo-hristov-931349285/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-[inherit]"
+          >
+            <IconLinkedin className="w-6 h-6" />
+          </a>
         </li>
-        <li>
-          <IconGmail className="w-8 h-8" />
+        <li className="flex justify-center items-center">
+          <a
+            href="mailto:hhristo.hristovv@gmail.com"
+            className="cursor-[inherit]"
+          >
+            <IconGmail className="w-8 h-8" />
+          </a>
         </li>
       </ul>
     </header>
