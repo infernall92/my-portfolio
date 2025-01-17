@@ -1,5 +1,5 @@
 import About from "./components/About";
-import CursorDot from "./components/CursorDot";
+import CursorDot from "./components/custom/CursorDot";
 import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Skills from "./components/Skills";

@@ -1,3 +1,7 @@
+import { IconGithub } from "./Icons/GitHub";
+import { IconGmail } from "./Icons/Gmail";
+import { IconLinkedin } from "./Icons/LinkedIn";
+
 const Header = () => {
   return (
     <header className="flex flex-col justify-between h-screen py-10 pl-36 mr-48">
@@ -32,10 +36,16 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <ul className="flex gap-5 text-slate-500 text-base font-semibold">
-        <li>Github</li>
-        <li>LinkedIn</li>
-        <li>Facebook</li>
+      <ul className="flex gap-10 text-slate-500 text-base font-semibold">
+        <li>
+          <IconGithub className="w-8 h-8" />
+        </li>
+        <li>
+          <IconLinkedin className="w-8 h-8" />
+        </li>
+        <li>
+          <IconGmail className="w-8 h-8" />
+        </li>
       </ul>
     </header>
   );

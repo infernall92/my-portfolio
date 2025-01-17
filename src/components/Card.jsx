@@ -1,4 +1,5 @@
-const Card = ({ from, to, role, workplace, description, technologies }) => {
+/* eslint-disable react/prop-types */
+const Card = ({ from, to, role, place, description, technologies }) => {
   return (
     <div className="text-slate-500 flex gap-5 group hover:bg-slate-800 hover:border-slate-700 rounded-md p-2">
       <div className="whitespace-nowrap text-xs font-medium pt-2">
@@ -10,7 +11,7 @@ const Card = ({ from, to, role, workplace, description, technologies }) => {
         <p className="font-semibold text-lg text-slate-300 group-hover:text-cyan-500">
           {role}
         </p>
-        <p className="font-thin text-slate-300">{workplace}</p>
+        <p className="font-thin text-slate-300">{place}</p>
         <p>{description}</p>
         <div className="flex flex-wrap">
           {technologies.map((technology) => (

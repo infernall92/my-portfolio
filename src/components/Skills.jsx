@@ -1,3 +1,15 @@
+import IconWithGlow from "./custom/IconWithGlow";
+import { IconCss3 } from "./Icons/Css";
+import { IconFramerMotion } from "./Icons/FramerMotion";
+import { IconGit } from "./Icons/Git";
+import { IconHtml5 } from "./Icons/Html";
+import { IconJavascript } from "./Icons/JavaScript";
+import { IconNextjs } from "./Icons/Next";
+import { IconReact } from "./Icons/React";
+import { IconRedux } from "./Icons/Redux";
+import { IconTailwindCss } from "./Icons/Tailwind";
+import { IconTypescript } from "./Icons/TypeScript";
+
 const Skills = () => {
   const softSkills = [
     "Problem solver",
@@ -9,17 +21,78 @@ const Skills = () => {
     "Adaptive",
     "Not scared of the unknown :)",
   ];
+
   const techSkills = [
-    "HTML5",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "ReactJS",
-    "Next.js",
-    "Redux",
-    "Tailwind CSS",
-    "Framer Motion",
-    "GIT",
+    {
+      name: "HTML5",
+      tech: (
+        <IconHtml5 className="w-12 h-12 relative z-10 group-hover:text-[#ff5733]" />
+      ),
+      color: "#ff5733",
+    },
+    {
+      name: "CSS3",
+      tech: (
+        <IconCss3 className="w-10 h-10 relative z-10 group-hover:text-[#2965f1]" />
+      ),
+      color: "#264de4",
+    },
+    {
+      name: "JavaScript",
+      tech: (
+        <IconJavascript className="w-11 h-11 relative z-10 group-hover:text-[#f0db4f]" />
+      ),
+      color: "#f0db4f",
+    },
+    {
+      name: "TypeScript",
+      tech: (
+        <IconTypescript className="w-10 h-10 relative z-10 group-hover:text-[#007acc]" />
+      ),
+      color: "#007acc",
+    },
+    {
+      name: "ReactJS",
+      tech: (
+        <IconReact className="w-10 h-10 relative z-10 group-hover:text-[#61DBFB]" />
+      ),
+      color: "#61DBFB",
+    },
+    {
+      name: "Next.js",
+      tech: (
+        <IconNextjs className="w-10 h-10 relative z-10 group-hover:text-[#000000]" />
+      ),
+      color: "#FFFFFF",
+    },
+    {
+      name: "Redux",
+      tech: (
+        <IconRedux className="w-10 h-10 relative z-10 group-hover:text-[#764abc]" />
+      ),
+      color: "#764abc",
+    },
+    {
+      name: "Tailwind CSS",
+      tech: (
+        <IconTailwindCss className="w-10 h-10 relative z-10 group-hover:text-[#3490dc]" />
+      ),
+      color: "#3490dc",
+    },
+    {
+      name: "Framer Motion",
+      tech: (
+        <IconFramerMotion className="w-10 h-10 relative z-10 group-hover:text-[#be29ec]" />
+      ),
+      color: "#ffffff",
+    },
+    {
+      name: "GIT",
+      tech: (
+        <IconGit className="w-10 h-10 relative z-10 group-hover:text-[#F1502F]" />
+      ),
+      color: "#F1502F",
+    },
   ];
   return (
     <div className="text-slate-500 my-5 flex justify-between gap-10">
@@ -44,15 +117,14 @@ const Skills = () => {
         <h2 className="text-slate-300 text-2xl font-thin flex items-center justify-center mb-5">
           TECH STACK
         </h2>
-        <div className="flex flex-wrap">
-          {/* TO BE DONE WITH ICONS */}
-          {techSkills.map((technology) => (
-            <span
-              key={technology}
-              className="text-cyan-500 bg-cyan-900 bg-opacity-50 rounded-full py-1 px-2 m-1 whitespace-nowrap"
-            >
-              {technology}
-            </span>
+        <div className="flex flex-wrap gap-10 items-center justify-center">
+          {techSkills.map((technology, index) => (
+            <IconWithGlow
+              key={index}
+              Icon={technology.tech}
+              glowColor={technology.color}
+              alt={technology.name}
+            />
           ))}
         </div>
       </div>
