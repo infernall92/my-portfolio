@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const IconWithGlow = ({ Icon, glowColor }) => {
   return (
     <div className="relative group">

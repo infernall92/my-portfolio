@@ -5,6 +5,26 @@
     },
     "course": "React - The Complete Guide (incl. React Router & Redux)",
     "academy": "Udemy",
-    "description": "I got pretty familiar with React and Next.js from what I learned through this course.",
+    "description": "I got pretty familiar with React and Next.js from what I learned through this course. Also improved my styling skills.",
     "technologies": ["React", "Tailwind CSS", "Redux", "React Router", "Next.js","TypeScript", "Framer Motion"]
+},
+{
+    "time": {
+        "from": "January",
+        "to": "November 2023"
+    },
+    "course": "The Complete Web Development Bootcamp",
+    "academy": "Udemy",
+    "description": "Started from the complete zero - I learned how to create web apps with HTML, CSS and JavaScript. Also had a small introduction of React basics. As this was a Full stack course, I gained some minor back-end knowledge with Node.js, Express, MongoDB, SQL",
+    "technologies": ["HTML", "CSS", "JavaScript", "React", "Express.js","Node.js", "GIT","MongoDB", "SQL"]
+},
+{
+    "time": {
+        "from": "December 2022",
+        "to": "January 2023"
+    },
+    "course": "Programming Basics with JavaScript",
+    "academy": "SoftUni",
+    "description": "This was a free course and I decided to give it a try. And thats where it all started. I fell inlove with coding and then continue pursuing it. Learned variables and constants, types of variables, arrays, objects, if-else & switch statements, for & while loops.",
+    "technologies": ["JavaScript"]
 }]
