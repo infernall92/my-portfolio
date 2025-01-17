@@ -1,30 +1,44 @@
 [{
     "time": {
-        "from": "November 2023",
+        "from": "Nov 2023",
         "to": "May - 2024"
     },
     "course": "React - The Complete Guide (incl. React Router & Redux)",
     "academy": "Udemy",
-    "description": "I got pretty familiar with React and Next.js from what I learned through this course. Also improved my styling skills.",
-    "technologies": ["React", "Tailwind CSS", "Redux", "React Router", "Next.js","TypeScript", "Framer Motion"]
+    "description": "I got pretty familiar with React and Next.js from what I learned through this course. Also improved my styling skills. I paused once I found a dev job, that's why certificate is missing",
+    "technologies": ["React", "Tailwind CSS", "Redux", "React Router", "Next.js","TypeScript", "Framer Motion"],
+    "certificate" : ""
 },
 {
     "time": {
-        "from": "January",
-        "to": "November 2023"
+        "from": "Jan 2023",
+        "to": "Nov 2023"
     },
     "course": "The Complete Web Development Bootcamp",
     "academy": "Udemy",
     "description": "Started from the complete zero - I learned how to create web apps with HTML, CSS and JavaScript. Also had a small introduction of React basics. As this was a Full stack course, I gained some minor back-end knowledge with Node.js, Express, MongoDB, SQL",
-    "technologies": ["HTML", "CSS", "JavaScript", "React", "Express.js","Node.js", "GIT","MongoDB", "SQL"]
+    "technologies": ["HTML", "CSS", "JavaScript", "React", "Express.js","Node.js", "GIT","MongoDB", "SQL"],
+    "certificate" : "https://drive.google.com/file/d/1-3DcmAxrNKNVjVG_V_Kyt8qFSOZTeGKR/view"
 },
 {
     "time": {
-        "from": "December 2022",
-        "to": "January 2023"
+        "from": "Apr 2023",
+        "to": "Sept 2023"
+    },
+    "course": "Drupal Back-end course",
+    "academy": "FFW Academy",
+    "description": "This was also a free course by a local academy and I signed up to see if back-end is my developer path",
+    "technologies": ["HTML", "PHP", "Symfony", "Databases", "SQL Queries","Drupal CMS"],
+    "certificate" : "https://drive.google.com/file/d/1YWFYGEBHtf1_-gnGzYivCf2dA8XVj3EC/view"
+},
+{
+    "time": {
+        "from": "Dec 2022",
+        "to": "Jan 2023"
     },
     "course": "Programming Basics with JavaScript",
     "academy": "SoftUni",
     "description": "This was a free course and I decided to give it a try. And thats where it all started. I fell inlove with coding and then continue pursuing it. Learned variables and constants, types of variables, arrays, objects, if-else & switch statements, for & while loops.",
-    "technologies": ["JavaScript"]
+    "technologies": ["JavaScript"],
+    "certificate" : "https://drive.google.com/file/d/1A_aeHCHd4rdQR_IdZT831KLVrOxQbn-l/view"
 }]

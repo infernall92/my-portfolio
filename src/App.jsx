@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Courses from "./components/Courses";
 import CursorDot from "./components/custom/CursorDot";
 import Experience from "./components/Experience";
 import Header from "./components/Header";
@@ -14,6 +15,7 @@ function App() {
           <About />
           <Skills />
           <Experience />
+          <Courses />
         </div>
       </div>
     </>
