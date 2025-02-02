@@ -7,6 +7,8 @@ const Card = ({
   description,
   technologies,
   learning,
+  working,
+  linkLabel,
   href,
 }) => {
   return (
@@ -44,6 +46,16 @@ const Card = ({
             rel="noopener noreferrer"
           >
             CERTIFICATE
+          </a>
+        )}
+        {working && (
+          <a
+            href={href}
+            className="text-slate-300 text-xs cursor-[inherit]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {linkLabel}
           </a>
         )}
       </div>

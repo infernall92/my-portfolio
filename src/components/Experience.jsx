@@ -9,9 +9,12 @@ const Experience = () => {
           from={exp.time.from}
           to={exp.time.to}
           role={exp.role}
-          workplace={exp.workplace}
+          place={exp.workplace}
           description={exp.description}
           technologies={exp.technologies}
+          working
+          linkLabel={"KONGWallet Page"}
+          href={exp.link}
         />
       ))}
     </section>
