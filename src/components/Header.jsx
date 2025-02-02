@@ -2,8 +2,16 @@ import IconWithGlow from "./custom/IconWithGlow";
 import { IconGithub } from "./Icons/GitHub";
 import { IconGmail } from "./Icons/Gmail";
 import { IconLinkedin } from "./Icons/LinkedIn";
+import { useDispatch } from "react-redux";
+import { setActiveTab } from "../store/activeTab.slice";
 
 const Header = () => {
+  const dispatch = useDispatch();
+
+  const handleClick = (tab) => {
+    dispatch(setActiveTab(tab));
+  };
+
   return (
     <header className="flex flex-col justify-between h-screen py-10 pl-36 mr-48">
       <div className="flex flex-col gap-4">
@@ -19,19 +27,38 @@ const Header = () => {
       </div>
       <nav className="">
         <ul className="text-slate-500 text-sm font-bold flex flex-col gap-5">
-          <li className="group flex items-center hover:text-slate-300">
+          <li
+            className="group flex items-center hover:text-slate-300"
+            onClick={() => handleClick("about")}
+          >
             <span className="inline-block h-[0.5px] bg-slate-500 group-hover:bg-slate-300 w-10 group-hover:w-20 mr-3" />
             ABOUT ME
           </li>
-          <li className="group flex items-center hover:text-slate-300">
+          <li
+            className="group flex items-center hover:text-slate-300"
+            onClick={() => handleClick("skills")}
+          >
             <span className="inline-block h-[0.5px] bg-slate-500 group-hover:bg-slate-300 w-10 group-hover:w-20 mr-3" />
             SKILLS
           </li>
-          <li className="group flex items-center hover:text-slate-300">
+          <li
+            className="group flex items-center hover:text-slate-300"
+            onClick={() => handleClick("courses")}
+          >
+            <span className="inline-block h-[0.5px] bg-slate-500 group-hover:bg-slate-300 w-10 group-hover:w-20 mr-3" />
+            LEARNING
+          </li>
+          <li
+            className="group flex items-center hover:text-slate-300"
+            onClick={() => handleClick("experience")}
+          >
             <span className="inline-block h-[0.5px] bg-slate-500 group-hover:bg-slate-300 w-10 group-hover:w-20 mr-3" />
             EXPERIENCE
           </li>
-          <li className="group flex items-center hover:text-slate-300">
+          <li
+            className="group flex items-center hover:text-slate-300"
+            onClick={() => handleClick("projects")}
+          >
             <span className="inline-block h-[0.5px] bg-slate-500 group-hover:bg-slate-300 w-10 group-hover:w-20 mr-3" />
             PROJECTS
           </li>

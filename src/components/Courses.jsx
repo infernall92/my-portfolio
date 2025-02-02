@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const Courses = () => {
   return (
-    <section id="courses">
+    <section id="courses" className="">
       <div className="flex flex-col gap-5">
         {COURSES.map((course) => (
           <Card
