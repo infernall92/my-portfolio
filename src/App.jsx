@@ -4,8 +4,7 @@ import CursorDot from "./components/custom/CursorDot";
 import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
-import { Provider, useSelector } from "react-redux";
-import { store } from "./store/store";
+import { useSelector } from "react-redux";
 
 function App() {
   const activeTab = useSelector((state) => state.activeTab.currentTab);
@@ -15,7 +14,7 @@ function App() {
       <CursorDot />
       <div className="flex justify-between gap-10">
         <Header />
-        <div className="py-10 pr-36">
+        <div className="py-10 pr-36 max-h-screen overflow-y-scroll">
           {activeTab === "about" && <About />}
           {activeTab === "skills" && <Skills />}
           {activeTab === "experience" && <Experience />}

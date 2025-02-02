@@ -2,11 +2,36 @@ import IconWithGlow from "./custom/IconWithGlow";
 import { IconGithub } from "./Icons/GitHub";
 import { IconGmail } from "./Icons/Gmail";
 import { IconLinkedin } from "./Icons/LinkedIn";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setActiveTab } from "../store/activeTab.slice";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const dispatch = useDispatch();
+  const activeTab = useSelector((state) => state.activeTab.currentTab);
+
+  const TABS = [
+    {
+      label: "ABOUT ME",
+      actionTab: "about",
+    },
+    {
+      label: "SKILLS",
+      actionTab: "skills",
+    },
+    {
+      label: "LEARNING",
+      actionTab: "courses",
+    },
+    {
+      label: "EXPERIENCE",
+      actionTab: "experience",
+    },
+    {
+      label: "PROJECTS",
+      actionTab: "projects",
+    },
+  ];
 
   const handleClick = (tab) => {
     dispatch(setActiveTab(tab));
@@ -27,41 +52,28 @@ const Header = () => {
       </div>
       <nav className="">
         <ul className="text-slate-500 text-sm font-bold flex flex-col gap-5">
-          <li
-            className="group flex items-center hover:text-slate-300"
-            onClick={() => handleClick("about")}
-          >
-            <span className="inline-block h-[0.5px] bg-slate-500 group-hover:bg-slate-300 w-10 group-hover:w-20 mr-3" />
-            ABOUT ME
-          </li>
-          <li
-            className="group flex items-center hover:text-slate-300"
-            onClick={() => handleClick("skills")}
-          >
-            <span className="inline-block h-[0.5px] bg-slate-500 group-hover:bg-slate-300 w-10 group-hover:w-20 mr-3" />
-            SKILLS
-          </li>
-          <li
-            className="group flex items-center hover:text-slate-300"
-            onClick={() => handleClick("courses")}
-          >
-            <span className="inline-block h-[0.5px] bg-slate-500 group-hover:bg-slate-300 w-10 group-hover:w-20 mr-3" />
-            LEARNING
-          </li>
-          <li
-            className="group flex items-center hover:text-slate-300"
-            onClick={() => handleClick("experience")}
-          >
-            <span className="inline-block h-[0.5px] bg-slate-500 group-hover:bg-slate-300 w-10 group-hover:w-20 mr-3" />
-            EXPERIENCE
-          </li>
-          <li
-            className="group flex items-center hover:text-slate-300"
-            onClick={() => handleClick("projects")}
-          >
-            <span className="inline-block h-[0.5px] bg-slate-500 group-hover:bg-slate-300 w-10 group-hover:w-20 mr-3" />
-            PROJECTS
-          </li>
+          {TABS.map((tab, index) => (
+            <li
+              key={index}
+              className={`group flex items-center hover:text-slate-300 ${
+                activeTab === tab.actionTab && "text-slate-300"
+              }`}
+              onClick={() => handleClick(tab.actionTab)}
+            >
+              <motion.span
+                className="inline-block h-[0.5px] mr-3"
+                initial={false}
+                animate={{
+                  backgroundColor:
+                    activeTab === tab.actionTab ? "#CBD5E1" : "#64748B", // bg-slate-300 / bg-slate-500
+                  width: activeTab === tab.actionTab ? "80px" : "40px",
+                }}
+                whileHover={{ backgroundColor: "#CBD5E1", width: "80px" }}
+                transition={{ duration: 0.3, ease: "easeInOut" }} // Smooth transition
+              />
+              {tab.label}
+            </li>
+          ))}
         </ul>
       </nav>
       <ul className="flex gap-10 text-slate-500 text-base font-semibold">
@@ -78,7 +90,6 @@ const Header = () => {
               }
               glowColor="#ffffff"
             />
-            {/* <IconGithub className="w-6 h-6" /> */}
           </a>
         </li>
         <li className="flex justify-center items-center">
@@ -94,7 +105,6 @@ const Header = () => {
               }
               glowColor="#ffffff"
             />
-            {/* <IconLinkedin className="w-6 h-6" /> */}
           </a>
         </li>
         <li className="flex justify-center items-center">
@@ -108,7 +118,6 @@ const Header = () => {
               }
               glowColor="#f2a60c"
             />
-            {/* <IconGmail className="w-8 h-8" /> */}
           </a>
         </li>
       </ul>
