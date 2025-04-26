@@ -5,10 +5,13 @@ import { IconLinkedin } from "./Icons/LinkedIn";
 import { useDispatch, useSelector } from "react-redux";
 import { setActiveTab } from "../store/activeTab.slice";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import TabItem from "./custom/TabItem";
 
 const Header = () => {
   const dispatch = useDispatch();
   const activeTab = useSelector((state) => state.activeTab.currentTab);
+  const [isHovered, setIsHovered] = useState(false);
 
   const TABS = [
     {
@@ -53,26 +56,12 @@ const Header = () => {
       <nav className="">
         <ul className="text-slate-500 text-sm font-bold flex flex-col gap-5">
           {TABS.map((tab, index) => (
-            <li
+            <TabItem
               key={index}
-              className={`group flex items-center hover:text-slate-300 ${
-                activeTab === tab.actionTab && "text-slate-300"
-              }`}
+              tab={tab}
+              isActive={activeTab === tab.actionTab}
               onClick={() => handleClick(tab.actionTab)}
-            >
-              <motion.span
-                className="inline-block h-[0.5px] mr-3"
-                initial={false}
-                animate={{
-                  backgroundColor:
-                    activeTab === tab.actionTab ? "#CBD5E1" : "#64748B", // bg-slate-300 / bg-slate-500
-                  width: activeTab === tab.actionTab ? "80px" : "40px",
-                }}
-                whileHover={{ backgroundColor: "#CBD5E1", width: "80px" }}
-                transition={{ duration: 0.3, ease: "easeInOut" }} // Smooth transition
-              />
-              {tab.label}
-            </li>
+            />
           ))}
         </ul>
       </nav>
