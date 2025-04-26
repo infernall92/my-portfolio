@@ -4,14 +4,11 @@ import { IconGmail } from "./Icons/Gmail";
 import { IconLinkedin } from "./Icons/LinkedIn";
 import { useDispatch, useSelector } from "react-redux";
 import { setActiveTab } from "../store/activeTab.slice";
-import { motion } from "framer-motion";
-import { useState } from "react";
 import TabItem from "./custom/TabItem";
 
 const Header = () => {
   const dispatch = useDispatch();
   const activeTab = useSelector((state) => state.activeTab.currentTab);
-  const [isHovered, setIsHovered] = useState(false);
 
   const TABS = [
     {

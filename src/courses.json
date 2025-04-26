@@ -1,6 +1,22 @@
 [
     {
         "time": {
+            "from": "Feb 2025",
+            "to": "Apr 2025"
+        },
+        "course": "ReactJS",
+        "academy": "Software University",
+        "description": "Started this course to strenghten my skills in React and fill the gaps in my learning in previous courses.",
+        "technologies": [
+            "React",
+            "Tailwind CSS",
+            "Redux",
+            "React Router"
+        ],
+        "certificate": "https://drive.google.com/file/d/1OmRnyTe0H4TN_32N24mO6tP8vvQTL8MV/view?usp=sharing"
+    },
+    {
+        "time": {
             "from": "Nov 2023",
             "to": "PAUSED May'24"
         },
