@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Currency exchange rates app",
+        "framework": "Next.js",
+        "description": "This assessment was given to me when I first started working as a dev to prove my knowledge. It's a simple currency exchange rates app. Written on Next.js with TypeScript. Redux implemented for global state management and async thunks for fetching real-time exchange rates from an API.",
+        "technologies": [
+            "Next.js",
+            "TypeScript",
+            "CSS Modules",
+            "Redux"
+        ],
+        "link": "https://infernall92.github.io/nextjs-forex-app"
+    }
+]
