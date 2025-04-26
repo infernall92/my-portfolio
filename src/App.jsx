@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import { useSelector } from "react-redux";
+import Projects from "./components/Projects";
 
 function App() {
   const activeTab = useSelector((state) => state.activeTab.currentTab);
@@ -15,6 +16,7 @@ function App() {
     skills: <Skills />,
     experience: <Experience />,
     courses: <Courses />,
+    projects: <Projects />,
   };
 
   return (
