@@ -1,4 +1,5 @@
 import IconWithGlow from "./custom/IconWithGlow";
+import ScrollFadeInWrapper from "./custom/ScrollFadeInWrapper";
 import { IconCss3 } from "./Icons/Css";
 import { IconFramerMotion } from "./Icons/FramerMotion";
 import { IconGit } from "./Icons/Git";
@@ -96,38 +97,42 @@ const Skills = () => {
   ];
   return (
     <div className="text-slate-500 my-5 flex flex-col md:flex-row justify-between gap-10">
-      <div id="soft-skills" className="flex-1 mb-10 md:mb-0">
-        <h2 className="text-slate-300 text-2xl font-thin flex items-center justify-center mb-10 md:mb-5">
-          <span className="font-bold">SOFT</span>&nbsp;SKILLS
-        </h2>
-        <ol>
-          {softSkills.map((skill, index) => (
-            <li
-              key={index}
-              className={`flex ${
-                index % 2 === 0 ? "justify-start" : "justify-end"
-              }`}
-            >
-              {skill}
-            </li>
-          ))}
-        </ol>
-      </div>
-      <div id="tech-stack" className="flex-1">
-        <h2 className="text-slate-300 text-2xl font-thin flex items-center justify-center mb-10 md:mb-5">
-          TECH&nbsp;<span className="font-bold">STACK</span>
-        </h2>
-        <div className="flex flex-wrap gap-10 items-center justify-center">
-          {techSkills.map((technology, index) => (
-            <IconWithGlow
-              key={index}
-              Icon={technology.tech}
-              glowColor={technology.color}
-              alt={technology.name}
-            />
-          ))}
+      <ScrollFadeInWrapper className="flex-1 flex flex-col">
+        <div id="soft-skills" className="flex-1 mb-10 md:mb-0">
+          <h2 className="text-slate-300 text-2xl font-thin flex items-center justify-center mb-10 md:mb-5">
+            <span className="font-bold md:font-thin">SOFT</span>&nbsp;SKILLS
+          </h2>
+          <ol>
+            {softSkills.map((skill, index) => (
+              <li
+                key={index}
+                className={`flex ${
+                  index % 2 === 0 ? "justify-start" : "justify-end"
+                }`}
+              >
+                {skill}
+              </li>
+            ))}
+          </ol>
         </div>
-      </div>
+      </ScrollFadeInWrapper>
+      <ScrollFadeInWrapper className="flex-1 flex flex-col">
+        <div id="tech-stack" className="flex-1">
+          <h2 className="text-slate-300 text-2xl font-thin flex items-center justify-center mb-10 md:mb-5">
+            TECH&nbsp;<span className="font-bold md:font-thin">STACK</span>
+          </h2>
+          <div className="flex flex-wrap gap-10 items-center justify-center">
+            {techSkills.map((technology, index) => (
+              <IconWithGlow
+                key={index}
+                Icon={technology.tech}
+                glowColor={technology.color}
+                alt={technology.name}
+              />
+            ))}
+          </div>
+        </div>
+      </ScrollFadeInWrapper>
     </div>
   );
 };
