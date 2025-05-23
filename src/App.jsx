@@ -38,6 +38,14 @@ function App() {
         {isMobile ? (
           <>
             <ScrollFadeInWrapper>
+              <div className="flex flex-col items-center mb-32">
+                <h2 className="text-slate-300 text-2xl font-thin flex items-center justify-center mb-10 md:mb-5">
+                  LET&apos;S CONNECT
+                </h2>
+                <Socials />
+              </div>
+            </ScrollFadeInWrapper>
+            <ScrollFadeInWrapper>
               <About />
             </ScrollFadeInWrapper>
             <ScrollFadeInWrapper>
@@ -52,12 +60,6 @@ function App() {
             <ScrollFadeInWrapper>
               <Projects />
             </ScrollFadeInWrapper>
-            <div className="flex flex-col items-center">
-              <h2 className="text-slate-300 text-2xl font-thin flex items-center justify-center mb-10 md:mb-5">
-                LET&apos;S CONNECT
-              </h2>
-              <Socials />
-            </div>
           </>
         ) : (
           <div className="py-10 md:pr-36 max-h-screen overflow-y-scroll w-full">
