@@ -6,4 +6,8 @@ export default defineConfig({
   plugins: [react()],
   // base: 'https://github.com/infernall92/my-portfolio',
   base: "/my-portfolio/",
+  server: {
+    host: "0.0.0.0",
+    port: 3000,
+  },
 });

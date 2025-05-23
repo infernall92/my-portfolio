@@ -1,6 +1,9 @@
 const About = () => {
   return (
     <section id="about" className="text-slate-500 flex flex-col gap-3">
+      <h2 className="text-slate-300 text-7xl font-extrabold md:hidden text-nowrap">
+        <span className="font-thin">About</span> Me
+      </h2>
       <p>
         I am a front-end developer passionate about building intuitive and
         visually appealing user interfaces. My goal is to grow by working on
@@ -22,11 +25,10 @@ const About = () => {
       </p>
       <p>
         Currently, I am part of a team as a{" "}
-        <span className="text-slate-300">Junior Front-End Developer</span>,
-        working on a{" "}
-        <span className="text-slate-300">Web3 startup project</span>. This role
-        has helped me understand the development flow, gain experience with{" "}
-        <span className="text-slate-300">GIT</span> and{" "}
+        <span className="text-slate-300">Front-End Developer</span>, working on
+        building a <span className="text-slate-300">Web3 startup project</span>.
+        This role has helped me understand the development flow, gain experience
+        with <span className="text-slate-300">GIT</span> and{" "}
         <span className="text-slate-300">Jira</span>, and observe how a team
         approaches the creation of a web application from the ground up.
       </p>

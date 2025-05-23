@@ -95,10 +95,10 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="text-slate-500 my-5 flex justify-between gap-10">
-      <div id="soft-skills" className="flex-1">
-        <h2 className="text-slate-300 text-2xl font-thin flex items-center justify-center mb-5">
-          SOFT SKILLS
+    <div className="text-slate-500 my-5 flex flex-col md:flex-row justify-between gap-10">
+      <div id="soft-skills" className="flex-1 mb-10 md:mb-0">
+        <h2 className="text-slate-300 text-2xl font-thin flex items-center justify-center mb-10 md:mb-5">
+          <span className="font-bold">SOFT</span>&nbsp;SKILLS
         </h2>
         <ol>
           {softSkills.map((skill, index) => (
@@ -114,8 +114,8 @@ const Skills = () => {
         </ol>
       </div>
       <div id="tech-stack" className="flex-1">
-        <h2 className="text-slate-300 text-2xl font-thin flex items-center justify-center mb-5">
-          TECH STACK
+        <h2 className="text-slate-300 text-2xl font-thin flex items-center justify-center mb-10 md:mb-5">
+          TECH&nbsp;<span className="font-bold">STACK</span>
         </h2>
         <div className="flex flex-wrap gap-10 items-center justify-center">
           {techSkills.map((technology, index) => (

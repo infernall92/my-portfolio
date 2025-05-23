@@ -1,10 +1,7 @@
-import IconWithGlow from "./custom/IconWithGlow";
-import { IconGithub } from "./Icons/GitHub";
-import { IconGmail } from "./Icons/Gmail";
-import { IconLinkedin } from "./Icons/LinkedIn";
 import { useDispatch, useSelector } from "react-redux";
 import { setActiveTab } from "../store/activeTab.slice";
 import TabItem from "./custom/TabItem";
+import Socials from "./Socials";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -38,19 +35,19 @@ const Header = () => {
   };
 
   return (
-    <header className="flex flex-col justify-between h-screen py-10 pl-36 mr-48">
-      <div className="flex flex-col gap-4">
-        <h1 className="text-slate-300 text-6xl font-extrabold">
+    <header className="flex flex-col justify-between h-screen py-10 md:pl-36 md:mr-48">
+      <div className="flex flex-col justify-between h-full py-40 gap-4 md:justify-normal md:h-fit md:py-0">
+        <h1 className="text-slate-300 text-7xl md:text-6xl font-extrabold">
           HRISTO HRISTOV
         </h1>
-        <h2 className="text-slate-300 text-3xl font-thin">
+        <h2 className="text-slate-300 text-3xl text-right font-thin">
           Front End Developer
         </h2>
         <p className="text-slate-500 text-base">
           I craft seamless and visually captivating web experiences.
         </p>
       </div>
-      <nav className="">
+      <nav className="hidden md:block">
         <ul className="text-slate-500 text-sm font-bold flex flex-col gap-5">
           {TABS.map((tab, index) => (
             <TabItem
@@ -62,51 +59,9 @@ const Header = () => {
           ))}
         </ul>
       </nav>
-      <ul className="flex gap-10 text-slate-500 text-base font-semibold">
-        <li className="flex justify-center items-center">
-          <a
-            href="https://github.com/infernall92"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-[inherit]"
-          >
-            <IconWithGlow
-              Icon={
-                <IconGithub className="w-6 h-6 group-hover:text-[#000000]" />
-              }
-              glowColor="#ffffff"
-            />
-          </a>
-        </li>
-        <li className="flex justify-center items-center">
-          <a
-            href="https://www.linkedin.com/in/hristo-hristov-931349285/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-[inherit]"
-          >
-            <IconWithGlow
-              Icon={
-                <IconLinkedin className="w-6 h-6 group-hover:text-[#0A66C2]" />
-              }
-              glowColor="#ffffff"
-            />
-          </a>
-        </li>
-        <li className="flex justify-center items-center">
-          <a
-            href="mailto:hhristo.hristovv@gmail.com"
-            className="cursor-[inherit]"
-          >
-            <IconWithGlow
-              Icon={
-                <IconGmail className="w-8 h-8 group-hover:text-[#c71610]" />
-              }
-              glowColor="#f2a60c"
-            />
-          </a>
-        </li>
-      </ul>
+      <div className="hidden md:block">
+        <Socials />
+      </div>
     </header>
   );
 };
