@@ -62,7 +62,7 @@ function App() {
             </ScrollFadeInWrapper>
           </>
         ) : (
-          <div className="py-10 md:pr-36 max-h-screen overflow-y-scroll w-full">
+          <div className="py-10 md:pr-36 max-h-screen w-full">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
