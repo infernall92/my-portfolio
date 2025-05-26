@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 import Projects from "./components/Projects";
 import { useEffect, useState } from "react";
 import ScrollFadeInWrapper from "./components/custom/ScrollFadeInWrapper";
-import Socials from "./components/Socials";
+import ContactMe from "./components/ContactMe";
 
 function App() {
   const activeTab = useSelector((state) => state.activeTab.currentTab);
@@ -38,12 +38,7 @@ function App() {
         {isMobile ? (
           <>
             <ScrollFadeInWrapper>
-              <div className="flex flex-col items-center mb-32">
-                <h2 className="text-slate-300 text-2xl font-thin flex items-center justify-center mb-10 md:mb-5">
-                  LET&apos;S CONNECT
-                </h2>
-                <Socials />
-              </div>
+              <ContactMe />
             </ScrollFadeInWrapper>
             <ScrollFadeInWrapper>
               <About />
@@ -62,7 +57,7 @@ function App() {
             </ScrollFadeInWrapper>
           </>
         ) : (
-          <div className="py-10 md:pr-36 max-h-screen w-full">
+          <div className="py-10 md:pr-36 max-h-screen overflow-y-scroll w-full scrollbar-hide">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
