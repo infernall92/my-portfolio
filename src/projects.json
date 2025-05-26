@@ -2,7 +2,7 @@
     {
         "name": "Currency exchange rates app",
         "framework": "Next.js",
-        "description": "This assessment was given to me when I first started working as a dev to prove my knowledge. It's a simple currency exchange rates app. Written on Next.js with TypeScript. Redux implemented for global state management and async thunks for fetching real-time exchange rates from an API.",
+        "description": "A currency exchange app built as an initial assessment to demonstrate my skills. Developed with Next.js and TypeScript, using Redux and async thunks to fetch real-time exchange rates.",
         "technologies": [
             "Next.js",
             "TypeScript",
@@ -10,5 +10,29 @@
             "Redux"
         ],
         "link": "https://infernall92.github.io/nextjs-forex-app"
+    },
+    {
+        "name": "My portfolio",
+        "framework": "React",
+        "description": "This portfolio web app is my way of showcasing both my technical skills and creativity. It reflects who I am as a developer and highlights the areas I’m most passionate about.",
+        "technologies": [
+            "React",
+            "Redux",
+            "Tailwind CSS",
+            "Framer Motion"
+        ],
+        "link": "https://infernall92.github.io/my-portfolio"
+    },
+    {
+        "name": "KONGWallet Landing page",
+        "framework": "Next.js",
+        "description": "Landing page for our upcoming web app, where users can learn about the product and subscribe for updates and the wallet’s release date.",
+        "technologies": [
+            "Next.js",
+            "Tailwind CSS",
+            "Framer Motion",
+            "SQLite"
+        ],
+        "link": "https://kongwallet.io/"
     }
 ]
